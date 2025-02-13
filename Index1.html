@@ -1,47 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Site Principal</title>
-    <style>
-        /* Styles pour les onglets */
-        .tab {
-            display: none;
-        }
-        .tab-button {
-            cursor: pointer;
-        }
-    </style>
+  <title>Plateforme Sportive</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Site Principal</h1>
-    </header>
-    <nav>
-        <button class="tab-button" onclick="showTab('home')">Accueil</button>
-        <button class="tab-button" onclick="showTab('sport')">Kurty Motricity Health Sport</button>
-        <!-- Ajoutez d'autres onglets ici -->
-    </nav>
-    <main>
-        <div id="home" class="tab">
-            <h2>Accueil</h2>
-            <p>Bienvenue sur le site principal.</p>
-        </div>
-        <div id="sport" class="tab">
-            <h2>Kurty Motricity Health Sport</h2>
-            <iframe src="https://kurty6.github.io/Kurty-Motricity-Health-Sport/" width="100%" height="600px"></iframe>
-        </div>
-        <!-- Ajoutez d'autres contenus ici -->
-    </main>
-    <script>
-        // Script pour afficher les onglets
-        function showTab(tabId) {
-            document.querySelectorAll('.tab').forEach(tab => {
-                tab.style.display = 'none';
-            });
-            document.getElementById(tabId).style.display = 'block';
-        }
-        // Afficher l'onglet d'accueil par défaut
-        showTab('home');
-    </script>
+  <div id="sidebar">
+    <ul>
+      <li><a href="#onglet1">Onglet 1</a></li>
+      <li><a href="#onglet2">Onglet 2</a></li>
+      <!-- Add more tabs here -->
+    </ul>
+  </div>
+  <div id="main-content">
+    <div id="onglet1">
+      <!-- Content for Onglet 1 -->
+      <form>
+        <!-- Formulaire pour saisir les données de la séance de sport -->
+      </form>
+    </div>
+    <div id="onglet2">
+      <!-- Content for Onglet 2 -->
+    </div>
+    <!-- Add more tab content here -->
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
